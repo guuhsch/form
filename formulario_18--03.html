@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=fo, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form name="Cadastro do usuario" method="get" action="index.html">
+        <table>
+            <tr>
+        <td>Informe seu nome</td>
+        <td><input type="text" name="nome" placeholder="Insira seu nome aqui!" required><br></td>
+            </tr>
+            <tr>
+        <td>Informe seu Endereço:</td>
+        <td><input type="text" name="endereço" value="Itapetininga"><br></td>
+            </tr>
+            <tr>
+        <td>Informe seu E-mail:</td>
+        <td><input type="email" name="email"><br></td>
+            </tr>
+            <tr>
+        <td>Senha:</td>
+        <td><input type="password" name="Senha" maxlength="10" minlength="3"></td>
+            </tr>
+            <tr>
+                <td>Informe seu Site:</td>
+                <td><input type="url" name="Site"></td>
+            </tr>
+            <tr>
+                <td>Informe um Número</td>
+                <td><input type="number" name="numero" max="100" min="100" step="2" value="10" size="20px"></td>
+            </tr>
+            <tr>
+                <td>Escolha um Valor</td>
+                <td><input type="range" name="Valor"></td>
+            </tr>
+            <tr>
+                <td>Escolha uma Data</td>
+                <td><input type="date" name="Data" max="2030-10-31"></td>
+            </tr>
+            <tr>
+                <td>Determine um Horario</td>
+                <td><input type="time" name="horas" step="300"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select name="Estado">
+                        <option value="">AC</option>
+                        <option value="">AP</option>
+                        <option value="">AM</option>
+                        <option value="">SP</option>
+                        <option value="">RJ</option>
+                        <option value="">SC</option>
+                        <option value="">MG</option>
+                        <option value="">ES</option>
+                        <option value="">PB</option>
+                        <option value="">BA</option>
+                        <option value="">TO</option>
+                        <option value="">MA</option>
+                        <option value="">MS</option>
+                        <option value="">MT</option>
+                        <option value="">GO</option>
+                        <option value="">DF</option>
+                        <option value="">RR</option>
+                        <option value="">RO</option>
+                        <option value="">CE</option>
+                        <option value="">PR</option>
+                        <option value="">PA</option>
+                        <option value="">RS</option>
+                        <option value="">PE</option>
+                        <option value="">PI</option>
+                        <option value="">AL</option>
+                        <option value="">PB</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Deixe seu comentário</td>
+            </tr>
+            <tr>
+                <td>Estado Civil</td>
+                <td>
+                    <input type="radio" name="est_civ"  value="solt">Solteiro<br>
+                    <input type="radio" name="est_civ"  value="solt">Casado<br>
+                    <input type="radio" name="est_civ"  value="solt">Viuvo<br>
+                    <input type="radio" name="est_civ"  value="solt">Divorciado<br>
+                    <input type="radio" name="est_civ"  value="solt">União Estavél<br>
+                    <input type="radio" name="est_civ"  value="solt">Encalhado<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Escolaridade</td>
+                <td>
+                    <input type="radio" name="esc" value="nao-alfabet">Não Alfabetizado<br>
+                    <input type="radio" name="esc" value="fund_inc">Fundamental incompleto<br>
+                    <input type="radio" name="esc" value="fund_comp">Fundamental Completo<br>
+                    <input type="radio" name="esc" value="ensmed_comp">Ensino médio Completo<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Check List</td>
+                <td>
+                    <input type="checkbox" name="camiseta" value="camisetas">camisetas<br>
+                    
+                    <input type="checkbox" name="blusas" value="blusas">blusas<br>
+                    
+                    <input type="checkbox" name="calcas" value="calcas">Calças<br>
+                    
+                    <input type="checkbox" name="saias" value="saias">Saias<br>
+                    
+                    <input type="checkbox" name="tenis" value="tenis">Tênis<br>
+                
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea  name="comentário" cols="50" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" name="enviar"></td><br>
+                <td align="center"><input type="reset" name="limpar"></td><br>
+                    </tr>
+    </table>
+    </form>
+</body>
+</html>
